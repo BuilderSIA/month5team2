@@ -1,7 +1,7 @@
 let allProducts = [
     {
       productId: 1,
-      productImg: "/images/image-1.png",
+      productImg: "/images/fav/image-1.png",
       productName: "Sut",
       productPrice: 139,
       productDesc: "lorem ipsum dolor sit amet dolor sit amet dolor sit amet dolor sit",
@@ -10,7 +10,7 @@ let allProducts = [
   
     {
       productId: 2,
-      productImg: "/images/image-2.png",
+      productImg: "/images/fav/image-2.png",
       productName: "Sut",
       productPrice: 13,
       productDesc: "lorem ipsum dolor sit amet dolor sit amet dolor sit amet dolor sit",
@@ -18,7 +18,7 @@ let allProducts = [
     },
     {
       productId: 3,
-      productImg: "/images/image-3.png",
+      productImg: "/images/fav/image-3.png",
       productName: "Maloko",
       productPrice: 1339,
       productDesc: "lorem ipsum dolor sit amet dolor sit amet dolor sit amet dolor sit",
@@ -26,7 +26,7 @@ let allProducts = [
     },
     {
       productId: 4,
-      productImg: "/images/image-4.png",
+      productImg: "/images/fav/image-4.png",
       productName: "Maslo",
       productPrice: 13923,
       productDesc: "lorem ipsum dolor sit amet dolor sit amet dolor sit amet dolor sit",
@@ -34,7 +34,7 @@ let allProducts = [
     },
     {
       productId: 5,
-      productImg: "/images/image-5.png",
+      productImg: "/images/fav/image-5.png",
       productName: "Yogurt",
       productPrice: 139453,
       productIsSelected: false,
@@ -43,7 +43,7 @@ let allProducts = [
     },
     {
       productId: 6,
-      productImg: "/images/image-6.png",
+      productImg: "/images/fav/image-6.png",
       productName: "Yogurt",
       productPrice: 139675,
       productDesc: "lorem ipsum dolor sit amet dolor sit amet dolor sit amet dolor sit",
