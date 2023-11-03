@@ -128,7 +128,6 @@ nav select option i {
   nav {
     width: 100%;
     height: 100px;
-
     background-color: white;
     position: fixed;
     z-index: 5;
@@ -390,7 +389,6 @@ main {
 }
 main .contiyner {
   width: 98%;
-  height: 1100px;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
@@ -428,7 +426,6 @@ main .card {
   width: 100%;
   height: 80%;
   display: flex;
-  align-items: center;
   margin-top: 50px;
   gap: 40px;
 }
@@ -474,7 +471,8 @@ main .card-child .child-btn {
   border: 3px solid;
   color: white;
   position: relative;
-  left: 5px;
+  left: 7px;
+  top: -7px;
 }
 main .card-child .tavar {
   width: 100%;
@@ -540,6 +538,7 @@ main .card-child .child-btn {
   border-radius: 5px;
   transition: 0.5s;
   font-size: 18px;
+  top: 18px;
 }
 main .card-child .ildch-btn:focus {
   outline: none !important;
@@ -557,8 +556,6 @@ main .button-more {
   color: #606060;
   border-radius: 1px;
   transition: 0.5s;
-  position: relative;
-  top: -70px;
   font-size: 20px;
 }
 main button:hover {
@@ -577,13 +574,30 @@ main .number {
   color: #606060;
   cursor: pointer;
   margin: 0 auto;
-  position: relative;
-  top: -30px;
+  margin-top: 10px;
 }
-main main .number p:nth-child(3) {
+main p {
+  transition: 0.5s;
+}
+main i {
+  transition: 0.5s;
+}
+
+.number p:hover {
   color: #f63;
 }
-main .card-management .contiyner {
+
+.number i:hover {
+  color: #f63;
+}
+
+main .number p:nth-child(3) {
+  color: #f63;
+}
+main .number p:nth-child(3) main .number p:nth-child(3) {
+  color: #f63;
+}
+main .number p:nth-child(3) .card-management .contiyner {
   background: #f3f2f1;
   width: 100%;
   height: 60px;
@@ -591,7 +605,7 @@ main .card-management .contiyner {
   display: flex;
   justify-content: center;
 }
-main .card-management .contiyner h5 {
+main .number p:nth-child(3) .card-management .contiyner h5 {
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -646,7 +660,7 @@ main .card-management .contiyner h5 {
     height: 80%;
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: -50px;
     gap: 40px;
   }
   main .card .card-management {
@@ -667,11 +681,9 @@ main .card-management .contiyner h5 {
   }
   main .card--body-child-1 {
     width: 700px;
-    height: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
-   
     margin-left: -190px;
     gap: 40px;
     margin-bottom: 40px;
@@ -696,6 +708,7 @@ main .card-management .contiyner h5 {
     color: white;
     position: absolute;
     left: 5px;
+    top: 290px;
   }
   main .card-child .tavar {
     width: 100%;
@@ -763,7 +776,7 @@ main .card-management .contiyner h5 {
     transition: 0.5s;
     font-size: 18px;
   }
-  main .card-child .ildch-btn:focus {
+  main .card-child .child-btn:focus {
     outline: none !important;
     border: 3px solid #5db647;
   }
@@ -802,10 +815,22 @@ main .card-management .contiyner h5 {
     position: relative;
     top: -10px;
   }
-  main main .number p:nth-child(3) {
+  main p {
+    transition: 0.5s;
+  }
+  main i {
+    transition: 0.5s;
+  }
+  .number p:hover {
     color: #f63;
   }
-  main .card-management .contiyner {
+  .number i:hover {
+    color: #f63;
+  }
+  main .number p:nth-child(3) {
+    color: #f63;
+  }
+  .card-management .contiyner {
     background: #f3f2f1;
     width: 100%;
     height: 60px;
@@ -813,18 +838,17 @@ main .card-management .contiyner h5 {
     display: flex;
     justify-content: center;
   }
-  main .card-management .contiyner h5 {
+  .card-management h5 {
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
-    margin-left: 10px;
-    line-height: 120%;
+    position: absolute;
+    top: -150px;
   }
 }
 @media screen and (max-width: 390px) {
   main {
     width: 100%;
-    height: 1500px;
     border: 1px solid #fbf8ec;
     background: #fbf8ec;
     margin: 0 auto;
@@ -869,7 +893,7 @@ main .card-management .contiyner h5 {
     height: 80%;
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     gap: 40px;
   }
   main .card .card-management {
@@ -890,14 +914,11 @@ main .card-management .contiyner h5 {
   }
   main .card--body-child-1 {
     width: 360px;
-    height: 1700px;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
-    margin-bottom: 40px;
-    margin-left: -125px;
-    top: 100px;
+    margin-top: 100px;
+    margin-left: -115px;
   }
   main .card--body-child-1 .card-child {
     width: 160px;
@@ -918,6 +939,7 @@ main .card-management .contiyner h5 {
     color: white;
     position: absolute;
     left: 5px;
+    top: 200px;
   }
   main .card-child .tavar {
     width: 100%;
@@ -984,7 +1006,7 @@ main .card-management .contiyner h5 {
     transition: 0.5s;
     font-size: 18px;
   }
-  main .card-child .ildch-btn:focus {
+  main .card-child .child-btn:focus {
     outline: none !important;
     border: 3px solid #5db647;
   }
@@ -1000,10 +1022,9 @@ main .card-management .contiyner h5 {
     color: #606060;
     border-radius: 1px;
     transition: 0.5s;
-    position: relative;
-    top: 150px;
     font-size: 20px;
     border-radius: 5px;
+    margin-top: 10px;
   }
   main button:hover {
     background: #969595;
@@ -1020,8 +1041,6 @@ main .card-management .contiyner h5 {
     color: #606060;
     cursor: pointer;
     margin: 0 auto;
-    position: relative;
-    top: 170px;
   }
   main .number p {
     transition: 0.5s;
@@ -1110,6 +1129,11 @@ footer {
   margin-left: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer-center h6:hover {
+  color: #f63;
 }
 
 @media screen and (max-width: 768px) {
@@ -1162,6 +1186,9 @@ footer {
     cursor: pointer;
     width: 100px;
   }
+  .footer-center h6:hover {
+    color: #f63;
+  }
 }
 @media screen and (max-width: 390px) {
   footer {
@@ -1179,14 +1206,16 @@ footer {
   }
   .footer-center .ul-1 {
     display: flex;
-    width: 390px;
+    width: 350px;
     margin-top: -50px;
     justify-content: space-around;
-   
     cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 20px;
   }
   .ul-1 li {
-    font-size: 8px;
+    font-size: 6px;
     transition: 0.5s;
   }
   .ul-1 li:hover {
