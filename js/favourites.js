@@ -15,7 +15,6 @@ function renderData(allData) {
             <button class="child-btn">В корзину</button>
         `;
     elParent.appendChild(elCard);
-    // console.log(item.productPrice);
   });
 }
 renderData(allProducts);

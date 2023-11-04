@@ -604,9 +604,12 @@ main {
     color: #606060;
     cursor: pointer;
     margin: 0 auto;
-    // position: relative;
-    // top: -30px;
+   
     margin-top: 10px;
+    a{
+      text-decoration: none;
+      color: #121212;
+    }
   }
   p{
     transition: 0.5s;
@@ -855,6 +858,10 @@ main .number p:nth-child(3) {
       margin: 0 auto;
       position: relative;
       top: -10px;
+      a{
+        text-decoration: none;
+        color: #121212;
+      }
     }
     p{
         transition: 0.5s;
@@ -888,7 +895,6 @@ main .number p:nth-child(3) {
       font-weight: 800;
       position: absolute;
       top: -150px;
-    //   line-height: 120%;
     }
   }
 
@@ -972,15 +978,11 @@ main .number p:nth-child(3) {
         }
         .card--body-child-1 {
           width: 360px;
-        //   height: 1700px;
           display: flex;
           flex-wrap: wrap;
-        //   border: 1px solid;
           justify-content: space-between;
-        //   margin-bottom: 40px;
          margin-top: 100px;
           margin-left: -115px;
-        //   top: 10px;
         }
         .card--body-child-1 .card-child {
           width: 160px;
@@ -1105,14 +1107,20 @@ main .number p:nth-child(3) {
           color: #606060;
           cursor: pointer;
           margin: 0 auto;
-        //   position: relative;
-        //   top: 170px;
-          p{
-            transition: 0.5s;
+         
+          a{
+            text-decoration: none;
+            color: #121212;
+            p{
+              transition: 0.5s;
+             
+              i{
+                transition: 0.5s;
+              }
+            }
+            
           }
-          i{
-            transition: 0.5s;
-          }
+        
         }
         .number p:hover{
             color: #f63;

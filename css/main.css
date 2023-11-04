@@ -580,6 +580,10 @@ main .number {
   margin: 0 auto;
   margin-top: 10px;
 }
+main .number a {
+  text-decoration: none;
+  color: #121212;
+}
 main p {
   transition: 0.5s;
 }
@@ -819,6 +823,10 @@ main .number p:nth-child(3) .card-management .contiyner h5 {
     position: relative;
     top: -10px;
   }
+  main .number a {
+    text-decoration: none;
+    color: #121212;
+  }
   main p {
     transition: 0.5s;
   }
@@ -1046,10 +1054,14 @@ main .number p:nth-child(3) .card-management .contiyner h5 {
     cursor: pointer;
     margin: 0 auto;
   }
-  main .number p {
+  main .number a {
+    text-decoration: none;
+    color: #121212;
+  }
+  main .number a p {
     transition: 0.5s;
   }
-  main .number i {
+  main .number a p i {
     transition: 0.5s;
   }
   main .number p:hover {
