@@ -3,3 +3,8 @@ function getProd(prod){
 }
 
 export default getProd;
+
+
+function setProd(){
+    
+}
