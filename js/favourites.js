@@ -11,20 +11,18 @@ function renderData(allData) {
             <h2>${item.productName}</h2>
             <h4>${item.productPrice} ₽</h4>
             <p>${item.productDesc}</p>
-            <img class="rating" src="./img/rating.png" alt="" />
+           
             <button class="child-btn">В корзину</button>
         `;
     elParent.appendChild(elCard);
-    // console.log(item.productPrice);
   });
 }
 renderData(allProducts);
-
 let arr = [];
 
-inp.addEventListener("input", () => {
+inp.addEventListener('keyup', () => {
   allProducts.map((element) => {
-    if (element.productName === inp.value) {
+    if (element.productName.toLowerCase() === inp.value || element.productName === inp.value || element.productName.toUpperCase() === inp.value) {
       arr.push(element);
     }
   });
