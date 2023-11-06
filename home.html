@@ -16,25 +16,34 @@
     <header>
         <nav>
             <div class="navbar container">
-                <img class="navbar-img-group" src="..//section.img/header-logo.png" alt="Group" />
-                <h2 class="navbar-img-h2">СЕВЕРЯНОЧКА</h2>
+                <a class="navbar" href="/home.html">
+                    <img src="/images/logo(tablet).png" alt="image" class="pro__header-nav-logo2">
+                    <h2 class="navbar-img-h2">СЕВЕРЯНОЧКА</h2>
+                </a>
+                
                 <button><i class="fa fa-bars" aria-hidden="true"></i>
                     <p>Каталог</p>
                 </button>
                 <input id="inp" type="search" placeholder="Найти товар" />
                 <div class="contiyner">
-                    <div class="con">
-                        <i class="fa-regular fa-heart"></i>
-                        <p onclick="goToPage('save')">Избранное</p>
-                    </div>
-                    <div class="con">
-                        <i class="fa-solid fa-shop"></i>
-                        <p onclick="goToPage('product')">продукты</p>
-                    </div>
-                    <div class="con">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p onclick="goToPage('korzina')">Корзина</p>
-                    </div>
+                    <a href="./pages/favourites.html" target="_blank">
+                        <div class="con">
+                            <i class="fa-regular fa-heart"></i>
+                            <p onclick="goToPage('favourites')">Избранное</p>
+                        </div>
+                    </a>
+                    <a href="./pages/products.html" target="_blank">
+                        <div class="con">
+                            <i class="fa-solid fa-shop"></i>
+                            <p onclick="goToPage('Products')">продукты</p>
+                        </div>
+                    </a>
+                    <a href="./pages/shoppingCart.html" target="">
+                        <div class="con">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p onclick="goToPage('shoppingCart')">Корзина</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="profile">
                     <img src="..//section.img/avatar1.png" alt="Avatar" />
