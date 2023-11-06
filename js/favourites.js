@@ -1,12 +1,13 @@
 let inp = document.getElementById("inp");
 let elParent = document.querySelector(".card--body-child-1");
+const heart = document.getElementsByClassName('bx-heart')
 
 function renderData(allData) {
   allData.map((item) => {
     let elCard = document.createElement("div");
     elCard.setAttribute("class", "card-child");
     elCard.innerHTML = `
-            <i class="bx bx-heart"></i>
+            <i class="bx bx-heart" id="heart"></i>
             <img class="tavar" src="${item.productImg}" alt="" />
             <h2>${item.productName}</h2>
             <h4>${item.productPrice} ₽</h4>
@@ -36,3 +37,11 @@ inp.addEventListener('keyup', () => {
     renderData(allProducts);
   }
 });
+
+for(let i = 0; i<heart.length;i++){
+  heart[i].addEventListener('click',(i)=>{
+    console.log(i);
+  })
+  // console.log(heart[i]);
+}
+

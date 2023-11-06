@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
-nav {
+.nav {
   width: 100%;
   height: 100px;
   background-color: white;
@@ -68,6 +69,8 @@ nav {
     width: 350px;
     height: 60px;
     display: flex;
+    overflow: hidden;
+    
   }
   .con {
     flex: 5;
@@ -410,6 +413,7 @@ main {
   border: 1px solid #fbf8ec;
   background: #fbf8ec;
   margin: 0 auto;
+  overflow: hidden;
   .contiyner {
     width: 98%;
     // height: 1100px;
@@ -417,6 +421,7 @@ main {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .cant {
     width: 350px;
@@ -456,6 +461,7 @@ main {
     // align-items: center;
     margin-top: 50px;
     gap: 40px;
+    overflow: hidden;
   }
   .card .card-management {
     width: 25%;
@@ -465,6 +471,7 @@ main {
     width: 75%;
     height: 50%;
     display: flex;
+    overflow: hidden;
   }
   .card .card-body-1 {
     width: 75%;
@@ -480,12 +487,14 @@ main {
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 40px;
+    overflow: hidden;
     /* border: 1px solid; */
   }
   .card--body-child-1 .card-child {
     width: 250px;
     flex-wrap: wrap;
     height: 365px;
+    overflow: hidden;
   }
   .card-child .child-btn:focus {
     background: #5db647;
@@ -540,6 +549,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
+    overflow: hidden;
   }
   .card-child h2 {
     font-size: 22px;
