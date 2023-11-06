@@ -1,15 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Intiqom</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar container">
+                <img class="navbar-img-group" src="..//section.img/header-logo.png" alt="Group" />
+                <h2 class="navbar-img-h2">СЕВЕРЯНОЧКА</h2>
+                <button><i class="fa fa-bars" aria-hidden="true"></i>
+                    <p>Каталог</p>
+                </button>
+                <input id="inp" type="search" placeholder="Найти товар" />
+                <div class="contiyner">
+                    <div class="con">
+                        <i class="fa-regular fa-heart"></i>
+                        <p onclick="goToPage('save')">Избранное</p>
+                    </div>
+                    <div class="con">
+                        <i class="fa-solid fa-shop"></i>
+                        <p onclick="goToPage('product')">продукты</p>
+                    </div>
+                    <div class="con">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p onclick="goToPage('korzina')">Корзина</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="..//section.img/avatar1.png" alt="Avatar" />
+                    <p>Алексей</p>
+                </div>
+                <select name="pets" id="pet-select">
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <option value="spider">Korzina</option>
+                    <option value="spider">Tovar</option>
+                    <option value="spider">Dostavka</option>
+                    <option value="spider">Skidka</option>
+                </select>
+            </div>
+        </nav>
+    </header>
 
 
 
-    <script src="./main.js"></script>
+    <section class="hero" id="hero">
+        <ul class="main_content container">
+            <li class="img_content">
+                <img class="header_imges" src="..//product.img/img (1).png" alt="gul">
+                <h1 class="title_main">Доставка бесплатно от 1000 ₽</h1>
+                </img>
+            </li>
+        </ul>
+    </section>
+
+
+    <main class="main_container">
+
+        <!-- menu -->
+
+        <div class="menu" id="Menu">
+            <div class="menu_text_content">
+                <h2 class="title_content ">Акции</h2>
+                <div class="menu_text_content">
+                    <p class="menu_text">Все продукты</p>
+                    <i id="icon_main" class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="menu_box">
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product1.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="skidka">-50%</span>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">44,50 ₽ <span class="title_menu">50,50 ₽</span></h4>
+                            <p class="text"> С картой<span class="text_menu">Обычная</span></p>
+                            <p class="text_p"> Г/Ц Блинчики с мясом вес ИСТОРИЯ Россия</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product2.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="skidka">-50%</span>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">44,50 ₽ <span class="title_menu">50,50 ₽</span></h4>
+                            <p class="text"> С картой<span class="text_menu">Обычная</span></p>
+                            <p class="text_p"> Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product3.jpg">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="skidka">-50%</span>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">44,50 ₽ <span class="title_menu">50,50 ₽</span></h4>
+                            <p class="text"> С картой<span class="text_menu">Обычная</span></p>
+                            <p class="text_p">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="menu_card menu_carn_none">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product4.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="skidka">-50%</span>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">44,50 ₽ <span class="title_menu">50,50 ₽</span></h4>
+                            <p class="text"> С картой<span class="text_menu">Обычная</span></p>
+                            <p class="text_p">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="menu" id="Menu">
+            <div class="menu_text_content">
+                <h2 class="title_content ">Акции</h2>
+                <div class="menu_text_content">
+                    <p class="menu_text">Новинки</p>
+                    <i id="icon_main" class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product5.jpg">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">599,99 ₽ </h4>
+                            <p class="p_p"> .</p>
+                            <p class="text_p">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product3.jpg">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">45,50 ₽</h4>
+                            <p>.</p>
+                            <p class="text_p"> Колбаса МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product4.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">159,99 ₽</h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_card menu_carn_none">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product2.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">49,39 ₽ </h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="menu" id="Menu">
+            <div class="menu_text_content">
+                <h2 class="title_content ">Акции</h2>
+                <div class="menu_text_content">
+                    <p class="menu_text">Покупали раньше</p>
+                    <i id="icon_main" class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product6.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">77,99 ₽ </h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p"> Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product4.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">159,99 ₽ </h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p"> Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product5.jpg">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">599,99 ₽ </h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p"> Г/Ц Блинчики с мясом вес ИСТОРИЯ Россия</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu_card menu_carn_none">
+
+                    <div class="menu_image">
+                        <img src="..//product.img/product2.png">
+                    </div>
+                    <div class="menu_content-box">
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="menu_info">
+                            <h4 class="title">49,39 ₽ </h4>
+                            <p class="p_p">.</p>
+                            <p class="text_p"> Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <a href="#" class="menu_btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="content_cart">
+            <h5 class="content_title">Специальные предложения</h5>
+            <div class="content1">
+                <div class="content-cont">
+                    <div class="content-box1">
+                        <h6 class="title_cont1">Оформите карту «Северяночка»</h6>
+                        <p class="text_cont1">И получайте бонусы при покупке в магазинах и на сайте</p>
+                    </div>
+                    <img class="img_cont1" src="..//cart.img/cart1.png" alt="cart">
+
+                </div>
+                <div class="content-cont1">
+                    <div class="content-box1">
+                        <h6 class="title_cont">Покупайте акционные товары</h6>
+                        <p class="text_cont">И получайте вдвое больше бонусов</p>
+                    </div>
+                    <img class="img_cont2" src="..//section.img/cart-3.png" alt="cart">
+
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="content_title-card">
+                <h6 class="title_shopp">Наши магазины</h6>
+            </div>
+            <div class="market_btn">
+                <button class="card_btn1">п.Щельяюр</button>
+                <button class="card_btn">д.Вертеп</button>
+                <button class="card_btn">с.Краснобор</button>
+                <button class="card_btn">д.Диюр</button>
+            </div>
+            <div class="card_1" style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.uz/maps/org/94800077397/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Нажот Талим Чилонзор филиал</a><a
+                    href="https://yandex.uz/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Учебный центр в Ташкенте</a><a
+                    href="https://yandex.uz/maps/10335/tashkent/category/computer_courses/184106158/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Компьютерные курсы в
+                    Ташкенте</a><iframe
+                    src="https://yandex.uz/map-widget/v1/org/94800077397/?ll=69.203373%2C41.286171&tilt=0.8726646259971648&z=20.06"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+
+        </section>
+
+        <section class="container_server">
+            <div>
+                <h6 class="service-title">Статьи</h6>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <div class="check_img">
+                            <img src="..//section.img/section1.png" alt="img">
+                        </div>
+                        <span class="data">05.03.2021</span>
+                        <h5 class="check-card_title">Режим использования масок и перчаток на территории магазинов</h5>
+                        <p class="check-card_text">Подробная информация о режимах использования масок и перчаток на
+                            территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <a class="check-link" href="#">Подробнее</a>
+                    </li>
+                    <li class="service-item">
+                        <div class="check_img">
+                            <img src="..//section.img/section2.png" alt="img">
+                        </div>
+                        <span class="data">05.03.2021</span>
+                        <h5 class="check-card_title1">Весеннее настроение для каждой будний день.</h5>
+                        <p class="check-card_text1">8 Марта – это не просто Международный женский день, это ещё день
+                            тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.</p>
+                        <a class="check-link" href="#">Подробнее</a>
+                    <li class="service-item">
+                        <div class="check_img">
+                            <img src="..//section.img/section3.png" alt="img">
+                        </div>
+                        <span class="data">22.02.2020</span>
+                        <h5 class="check-card_title2">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h5>
+                        <p class="check-card_text2">Голосуйте за любимые категории, выбирайте категорию-победителя в
+                            мобильном приложении и получайте кешбэк 10% баллами в апреле! </p>
+                        <a class="check-link" href="#">Подробнее</a>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+     <footer>
+        <div class="footer-box container">
+            <img src="..//cart.img/logo (2).png" alt="image">
+            <ul class="footer-list">
+                <li class="footer-list-item">О компании</li>
+                <li class="footer-list-item">Контакты</li>
+                <li class="footer-list-item">Вакансии</li>
+                <li class="footer-list-item">Статьи</li>
+                <li class="footer-list-item">Политика обработки персональных данных</li>
+            </ul>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/">
+                    <img src="..//cart.img/instagram.png" alt="image">
+                </a>
+                <a href="https://vk.com/">
+                    <img src="..//cart.img/vkontakte.png" alt="image">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="..//cart.img/facebook.png" alt="image">
+                </a>
+                <a href="https://ok.ru/">
+                    <img src="..//cart.img/ok.png" alt="image">
+                </a>
+            </div>
+            <div class="phone-num">
+                <img src="..//cart.img/phone.png" alt="image">
+                <a href="tel:+8 800 777 33 33">8 800 777 33 33</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="..//main.js"></script>
 </body>
+
 </html>
