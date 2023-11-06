@@ -1,0 +1,18 @@
+/* kumbh-sans-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/Rubik-Regular.woff2') format('woff2'),
+         url('../fonts/Rubik-Regular.woff') format('woff');
+}
+  /* kumbh-sans-700 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/Rubik-Bold.woff2') format('woff2'),
+         url('../fonts/Rubik-Bold.woff') format('woff');
+}
