@@ -42,13 +42,14 @@ nav {
     font-style: normal;
     font-weight: 400;
     cursor: pointer;
+    transition: 0.5s;
   }
   button .bx-menu {
     font-weight: 100;
     font-size: 25px;
   }
   button:hover {
-    background: #5db647;
+    background: #f63;
   }
   input {
     border: 2px solid #5db647;
@@ -58,11 +59,13 @@ nav {
     padding: 0px 20px;
     font-size: large;
     font-style: normal;
+    transition: 0.5s;
   }
   input:focus {
     outline: none !important;
-    border: 3px solid #5db647;
+    border: 3px solid #f63;
     color: #121212;
+    transition: 0.5s;
   }
   .contiyner {
     width: 350px;
@@ -127,6 +130,7 @@ nav {
     font-size: 50px;
   }
 }
+
 @media screen and (max-width: 768px) {
   nav {
     width: 100%;
@@ -167,12 +171,14 @@ nav {
       font-style: normal;
       font-weight: 400;
       cursor: pointer;
+      transition: 0.5s;
     }
     button .bx-menu {
       font-size: 35px;
     }
     button:hover {
-      background: #5db647;
+      background: #f63;
+      color: whitesmoke;
     }
     button p {
       display: none;
@@ -188,7 +194,7 @@ nav {
     }
     input:focus {
       outline: none !important;
-      border: 3px solid #5db647;
+      border: 3px solid #f63;
       color: #121212;
     }
     .contiyner {
@@ -262,6 +268,11 @@ nav {
 
 
 
+
+
+
+
+
 @media screen and (max-width: 390px) {
   nav {
     width: 100%;
@@ -301,12 +312,13 @@ nav {
       font-weight: 400;
       cursor: pointer;
       display: none;
+      transition: 0.5s;
     }
     button .bx-menu {
       font-size: 35px;
     }
     button:hover {
-      background: #5db647;
+      background: #f63;
     }
     button p {
       display: none;
@@ -323,7 +335,7 @@ nav {
     }
     input:focus {
       outline: none !important;
-      border: 3px solid #5db647;
+      border: 3px solid #f63;
       color: #121212;
     }
     .contiyner {
@@ -478,38 +490,45 @@ main {
     height: 50%;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 40px;
     /* border: 1px solid; */
   }
   .card--body-child-1 .card-child {
     width: 250px;
     flex-wrap: wrap;
-    height: 365px;
-  }
-  .card-child .child-btn:focus {
-    background: #5db647;
-    color: white;
-  }
-  .card-child .child-btn::after {
-    background: #5db647;
+    height: 450px;
+    padding: 15px;
+    position: relative;
   }
   .card-child .child-btn {
     outline: none !important;
     border: 3px solid;
     color: white;
-    position: relative;
-    left: 7px;
-    top: -7px;
+    // position: sticky;
+    left: 6px;
+    // top: 0;
+    // margin: 0 auto;
   }
+  .card-child .child-btn:hover{
+    border: 1px solid #f63;
+  }
+  .card-child .child-btn:focus {
+    background: #f63;
+    color: white;
+    border: 1px solid #f63;
+  }
+  
   .card-child .tavar {
     width: 100%;
-    height: 42%;
+    height: 250px;
+    
   }
   .card-child {
+    // height: 300px;
     background: #fff;
-    position: relative;
-    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    // position: relative;
+    box-shadow: 10px 4px 8px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
   }
   .card-child i {
@@ -517,18 +536,19 @@ main {
     color: #121212;
     top: 10px;
     left: 85%;
-    font-size: 45px;
+    font-size: 35px;
     cursor: pointer;
-    margin-left: -15px;
+    margin-left: -10px;
+  }
+  .card-child h2{
+    font-size: 17px;
   }
   .card-child h4 {
-    font-size: 18px;
-    font-style: normal;
+    font-size: 16px;
     font-weight: 700;
     line-height: 150%;
     color: #414141;
     margin-top: 15px;
-    margin-left: 10px;
     width: 95%;
     height: 45px;
     display: flex;
@@ -536,15 +556,9 @@ main {
   }
   .card-child p {
     width: 95%;
-    margin-left: 10px;
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
-  }
-  .card-child h2 {
-    font-size: 22px;
-    margin-left: 10px;
-    font-weight: 800;
   }
   .card-child p:nth-child(6) {
     width: 70%;
@@ -556,24 +570,25 @@ main {
     margin-top: 10px;
   }
   .card-child .child-btn {
+    position: absolute;
     width: 95%;
     height: 50px;
     margin: 0 auto;
-    margin-top: 5px;
     background: white;
     color: #5db647;
     border: 1px solid #5db647;
     border-radius: 5px;
     transition: 0.5s;
     font-size: 18px;
-    top: 18px;
+    bottom: 10px;
+    // margin-top: 500px;
   }
-  .card-child .ildch-btn:focus {
+  .card-child .child-btn:focus {
     outline: none !important;
-    border: 3px solid #5db647;
+    border: 3px solid #f63;
   }
   .child-btn:hover {
-    background-color: #5db647;
+    background-color: #f63;
     color: white;
   }
   .button-more {
@@ -584,8 +599,6 @@ main {
     color: #606060;
     border-radius: 1px;
     transition: 0.5s;
-    // position: relative;
-    // top: -70px;
     font-size: 20px;
   }
   button:hover {
@@ -1596,4 +1609,12 @@ footer {
         }
        }
     }
+}
+.menu-scroll{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .menu-scroll{
+    display: inline;
+  }
 }

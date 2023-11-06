@@ -8,6 +8,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Document</title>
   </head>
   <body>
@@ -168,7 +169,30 @@
         </div>
       </a>
     </div>
-    <script src="/js/muslim.data.js/data.js"></script>
+    <div class="menu-scroll">
+      <div class="menu-scroll-bar" id="menu-scroll-bar">
+        <h5 id="favourites-card-management-price-class-filter">Фильтр</h5>
+        <div class="price--class">
+          <p id="favourites-card-management-price-class-price">Цена</p>
+          <button id="favourites-main-button-dalete">Очистить</button>
+        </div>
+        <div class="calculiyator">
+          <input  type="text" placeholder="1" /  id="favourites-card-management-input-min">
+          <i class="bx bx-move-horizontal"></i>
+          <input type="text" placeholder="10" /   id="favourites-card-management-input-max">
+        </div>
+        <input
+          class="min-max-class"
+          id="favourites-card-management-input-min-max"
+          type="range"
+          id="price"
+          name="points"
+          min="1"
+          max="10"
+        />
+      </div>
+    </div>
+    <!-- <script src="/js/muslim.data.js/data.js"></script> -->
     <script src="/js/favourites.js"></script>
   </body>
 </html>
