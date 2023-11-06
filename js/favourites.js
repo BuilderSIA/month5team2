@@ -116,7 +116,7 @@ fetch(url)
         let elCard = document.createElement("div");
         elCard.setAttribute("class", "card-child");
         elCard.innerHTML = `
-        <i class="fa-regular fa-heart fa-beat-fade" style="color: #000;"></i>
+        <i class="fa-solid fa-heart" style="color: #000000;"></i></i>
             <img class="tavar" src="${item.image}" alt="" />
             <h2>${item.title}</h2>
             <h4>${item.price} ₽</h4>
