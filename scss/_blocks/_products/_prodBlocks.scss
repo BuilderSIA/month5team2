@@ -105,10 +105,26 @@
             }
             &-price {
                 font-size: 12px;
+                margin: 10px;
             }
             &-title {
                 font-size: 16px;
                 font-weight: 400;
+                margin: 10px;
+            }
+            &-btn {
+                width: 90%;
+                height: 40px;
+                margin: 30px 10px 10px 10px;
+                color: #70C05B;
+                background: transparent;
+                border: 1px solid #70C05B;
+                transition: .5s background;
+                cursor: pointer;
+            }
+            &-btn:hover {
+                color: #fff;
+                background-color: #FF6633;
             }
         }
     }

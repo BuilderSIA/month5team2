@@ -18,7 +18,7 @@ fetch(url)
             <img src="${item.image}" width="70%" height="180">
             <h3 class="pro__main-list-item-price">${item.price}</h3>
             <h3 class="pro__main-list-item-title">${item.title}</h3>
-            <button>В корзину</button>
+            <button class="pro__main-list-item-btn">В корзину</button>
         </li>
         `
     })
