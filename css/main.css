@@ -256,7 +256,7 @@
   }
 }
 @media screen and (max-width: 390px) {
-  nav {
+  .nav {
     width: 100%;
     height: 100px;
     background-color: white;
@@ -264,7 +264,7 @@
     z-index: 5;
     margin: 0 auto;
   }
-  nav .navbar {
+  .nav .navbar {
     display: flex;
     align-items: center;
     height: 100%;
@@ -272,16 +272,16 @@
     width: 390px;
     box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
   }
-  nav .navbar-img-group {
+  .nav .navbar-img-group {
     width: 37px;
     margin-left: 20px;
   }
-  nav .navbar-img-h2 {
+  .nav .navbar-img-h2 {
     font-weight: 700;
     font-size: 23px;
     display: none;
   }
-  nav button {
+  .nav button {
     width: 200px;
     height: 55px;
     background: #70c05b;
@@ -296,16 +296,16 @@
     cursor: pointer;
     display: none;
   }
-  nav button .bx-menu {
+  .nav button .bx-menu {
     font-size: 35px;
   }
-  nav button:hover {
+  .nav button:hover {
     background: #5db647;
   }
-  nav button p {
+  .nav button p {
     display: none;
   }
-  nav input {
+  .nav input {
     border: 2px solid #5db647;
     height: 55px;
     width: 270px;
@@ -315,19 +315,19 @@
     font-style: normal;
     margin-left: 20px;
   }
-  nav input:focus {
+  .nav input:focus {
     outline: none !important;
     border: 3px solid #5db647;
     color: #121212;
   }
-  nav .contiyner {
+  .nav .contiyner {
     width: 350px;
     height: 60px;
     gap: 15px;
     display: flex;
     display: none;
   }
-  nav .con {
+  .nav .con {
     flex: 5;
     display: flex;
     align-items: center;
@@ -336,22 +336,22 @@
     gap: 5px;
     display: none;
   }
-  nav .con i {
+  .nav .con i {
     font-size: 25px;
     font-weight: 400;
     transition: 0.5s;
   }
-  nav .con i:hover {
+  .nav .con i:hover {
     color: #23411b;
   }
-  nav .con i:focus {
+  .nav .con i:focus {
     color: #23411b;
     background-color: red;
   }
-  nav .con p {
+  .nav .con p {
     font-size: 12px;
   }
-  nav .profile {
+  .nav .profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,17 +361,17 @@
     margin-right: 15px;
     display: none;
   }
-  nav .profile img {
+  .nav .profile img {
     width: 45px;
     height: 45px;
     display: none;
   }
-  nav .profile p {
+  .nav .profile p {
     font-size: 20px;
     font-weight: 500;
     display: none;
   }
-  nav select {
+  .nav select {
     height: 40px;
     width: 40px;
     align-items: center;
@@ -379,7 +379,7 @@
     justify-content: center;
     display: none;
   }
-  nav select option i {
+  .nav select option i {
     align-items: center;
     display: flex;
     justify-content: center;
