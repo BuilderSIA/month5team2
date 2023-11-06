@@ -3,7 +3,7 @@ const user = document.querySelector('.pro__header-nav-user')
 
 
 
-const url = 'https://fakestoreapi.com/products'
+const url = 'https://fakestoreapi.com/products';
 
 
 fetch(url)
