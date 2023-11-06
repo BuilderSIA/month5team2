@@ -2,7 +2,7 @@
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     list-style: none;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .pro__container {
@@ -32,10 +32,17 @@
             border: none;
             border-radius: 4px;
             margin: 0 30px;
+            transition: 0.5s;
             p {
                 font-size: 15px;
                 margin: 0;
             }
+        }
+        &-btn:hover{
+            background-color: #FF6633;
+        }
+        &-btn:focus{
+            background-color: #FF6633;
         }
         &-search {
             display: flex;
@@ -43,6 +50,7 @@
             border: 1px solid #70C05B;
             border-radius: 4px;
             margin: 0 30px 0 0;
+            background: #fff;
             #pro__search {
                 width: 340px;
                 border: none;
@@ -84,17 +92,22 @@
     &-title {
         font-size: 36px;
         color: #414141;
+        margin-top: 50px;
     }
     &-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 80px;
+        padding: 0px 0px 100px 0px;
         &-item {
             position: relative;
             width: 20%;
-            height: 420px;
+            height: 400px;
             border: 1px solid;
             background-color: #fff;
+            overflow-y: hidden;
+            position: relative;
+            top: 50px;
             &-like {
                 position: absolute;
                 // top: 10px;
@@ -119,10 +132,18 @@
                 color: #70C05B;
                 background: transparent;
                 border: 1px solid #70C05B;
-                transition: .5s background;
+                transition: 0.5s ;
                 cursor: pointer;
+                position: absolute;
+                bottom: 5px;
             }
             &-btn:hover {
+                color: #fff;
+                background-color: #FF6633;
+                border-radius: 5px;
+            }
+            &-btn:focus{
+                outline: none;
                 color: #fff;
                 background-color: #FF6633;
             }
