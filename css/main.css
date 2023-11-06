@@ -1,4 +1,1517 @@
 * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  margin: 0 auto;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  width: 1300px;
+  gap: 35px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+nav .navbar-img-group {
+  width: 37px;
+  margin-left: 20px;
+}
+nav .navbar-img-h2 {
+  font-weight: 700;
+  font-size: 23px;
+}
+nav button {
+  width: 300px;
+  height: 55px;
+  background: #70c05b;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 19px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+nav button .bx-menu {
+  font-weight: 100;
+  font-size: 25px;
+}
+nav button:hover {
+  background: #5db647;
+}
+nav input {
+  border: 2px solid #5db647;
+  height: 55px;
+  width: 700px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: large;
+  font-style: normal;
+}
+nav input:focus {
+  outline: none !important;
+  border: 3px solid #5db647;
+  color: #121212;
+}
+nav .contiyner {
+  width: 350px;
+  height: 60px;
+  display: flex;
+}
+nav .con {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: 0.5s;
+}
+nav .con:hover {
+  color: #f63;
+}
+nav .con i {
+  font-size: 25px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+nav .con i:hover {
+  color: #23411b;
+}
+nav .con i:focus {
+  color: #23411b;
+  background-color: red;
+}
+nav .con p {
+  font-size: 12px;
+}
+nav .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 180px;
+  height: 55px;
+}
+nav .profile img {
+  width: 45px;
+  height: 45px;
+}
+nav .profile p {
+  font-size: 20px;
+  font-weight: 500;
+}
+nav select {
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+nav select option i {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    margin: 0 auto;
+  }
+  nav .navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 768px;
+    gap: 25px;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+  nav .navbar-img-group {
+    width: 37px;
+    margin-left: 20px;
+  }
+  nav .navbar-img-h2 {
+    font-weight: 700;
+    font-size: 23px;
+    display: none;
+  }
+  nav button {
+    width: 200px;
+    height: 55px;
+    background: #70c05b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  nav button .bx-menu {
+    font-size: 35px;
+  }
+  nav button:hover {
+    background: #5db647;
+  }
+  nav button p {
+    display: none;
+  }
+  nav input {
+    border: 2px solid #5db647;
+    height: 55px;
+    width: 700px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    font-size: large;
+    font-style: normal;
+  }
+  nav input:focus {
+    outline: none !important;
+    border: 3px solid #5db647;
+    color: #121212;
+  }
+  nav .contiyner {
+    width: 350px;
+    height: 60px;
+    gap: 15px;
+    display: flex;
+  }
+  nav .con {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav .con i {
+    font-size: 25px;
+    font-weight: 400;
+    transition: 0.5s;
+  }
+  nav .con i:hover {
+    color: #23411b;
+  }
+  nav .con i:focus {
+    color: #23411b;
+    background-color: red;
+  }
+  nav .con p {
+    font-size: 12px;
+  }
+  nav .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 180px;
+    height: 55px;
+    margin-right: 15px;
+  }
+  nav .profile img {
+    width: 45px;
+    height: 45px;
+  }
+  nav .profile p {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+  }
+  nav select {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  nav select option i {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    margin: 0 auto;
+  }
+  nav .navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 390px;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+  nav .navbar-img-group {
+    width: 37px;
+    margin-left: 20px;
+  }
+  nav .navbar-img-h2 {
+    font-weight: 700;
+    font-size: 23px;
+    display: none;
+  }
+  nav button {
+    width: 200px;
+    height: 55px;
+    background: #70c05b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    display: none;
+  }
+  nav button .bx-menu {
+    font-size: 35px;
+  }
+  nav button:hover {
+    background: #5db647;
+  }
+  nav button p {
+    display: none;
+  }
+  nav input {
+    border: 2px solid #5db647;
+    height: 55px;
+    width: 270px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    font-size: large;
+    font-style: normal;
+    margin-left: 20px;
+  }
+  nav input:focus {
+    outline: none !important;
+    border: 3px solid #5db647;
+    color: #121212;
+  }
+  nav .contiyner {
+    width: 350px;
+    height: 60px;
+    gap: 15px;
+    display: flex;
+    display: none;
+  }
+  nav .con {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+  }
+  nav .con i {
+    font-size: 25px;
+    font-weight: 400;
+    transition: 0.5s;
+  }
+  nav .con i:hover {
+    color: #23411b;
+  }
+  nav .con i:focus {
+    color: #23411b;
+    background-color: red;
+  }
+  nav .con p {
+    font-size: 12px;
+  }
+  nav .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 180px;
+    height: 55px;
+    margin-right: 15px;
+    display: none;
+  }
+  nav .profile img {
+    width: 45px;
+    height: 45px;
+    display: none;
+  }
+  nav .profile p {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+  }
+  nav select {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  nav select option i {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+}
+main {
+  width: 1300px;
+  border: 1px solid #fbf8ec;
+  background: #fbf8ec;
+  margin: 0 auto;
+}
+main .contiyner {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+main .cant {
+  width: 350px;
+  cursor: pointer;
+  height: 24px;
+  display: flex;
+  margin-top: 35px;
+  align-items: center;
+  gap: 4px;
+}
+main .cant p {
+  font-size: 17px;
+}
+main .cant i {
+  font-size: 30px;
+  font-weight: 100;
+}
+main .cant p:nth-child(5) {
+  color: rgba(0, 0, 0, 0.555);
+}
+main h3 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 30px;
+  color: rgba(18, 18, 18, 0.8392156863);
+}
+main .card {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+}
+main .card .card-management {
+  width: 25%;
+  height: 100%;
+}
+main .card .card-body-1 {
+  width: 75%;
+  height: 50%;
+  display: flex;
+}
+main .card .card-body-1 {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .card--body-child-1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+  /* border: 1px solid; */
+}
+main .card--body-child-1 .card-child {
+  width: 250px;
+  flex-wrap: wrap;
+  height: 365px;
+}
+main .card-child .child-btn:focus {
+  background: #5db647;
+  color: white;
+}
+main .card-child .child-btn::after {
+  background: #5db647;
+}
+main .card-child .child-btn {
+  outline: none !important;
+  border: 3px solid;
+  color: white;
+  position: relative;
+  left: 7px;
+  top: -7px;
+}
+main .card-child .tavar {
+  width: 100%;
+  height: 42%;
+}
+main .card-child {
+  background: #fff;
+  position: relative;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+main .card-child i {
+  position: absolute;
+  color: #121212;
+  top: 10px;
+  left: 85%;
+  font-size: 45px;
+  cursor: pointer;
+  margin-left: -15px;
+}
+main .card-child h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 95%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+main .card-child p {
+  width: 95%;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+main .card-child h2 {
+  font-size: 22px;
+  margin-left: 10px;
+  font-weight: 800;
+}
+main .card-child p:nth-child(6) {
+  width: 70%;
+  background: red;
+  color: red;
+}
+main .card-child .rating {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+main .card-child .child-btn {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: white;
+  color: #5db647;
+  border: 1px solid #5db647;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 18px;
+  top: 18px;
+}
+main .card-child .ildch-btn:focus {
+  outline: none !important;
+  border: 3px solid #5db647;
+}
+main .child-btn:hover {
+  background-color: #5db647;
+  color: white;
+}
+main .button-more {
+  margin-left: 42%;
+  width: 200px;
+  height: 50px;
+  background: #dedede;
+  color: #606060;
+  border-radius: 1px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+main button:hover {
+  background: #969595;
+  color: #fff;
+}
+main .number {
+  width: 670px;
+  height: 50px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  gap: 33px;
+  color: #606060;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+main .number a {
+  text-decoration: none;
+  color: #121212;
+}
+main p {
+  transition: 0.5s;
+}
+main i {
+  transition: 0.5s;
+}
+
+.number p:hover {
+  color: #f63;
+}
+
+.number i:hover {
+  color: #f63;
+}
+
+main .number p:nth-child(3) {
+  color: #f63;
+}
+main .number p:nth-child(3) main .number p:nth-child(3) {
+  color: #f63;
+}
+main .number p:nth-child(3) .card-management .contiyner {
+  background: #f3f2f1;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+main .number p:nth-child(3) .card-management .contiyner h5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: 10px;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 768px;
+    border: 1px solid #fbf8ec;
+    background: #fbf8ec;
+    margin: 0 auto;
+  }
+  main .contiyner {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .cant {
+    width: 350px;
+    cursor: pointer;
+    height: 24px;
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+    gap: 4px;
+  }
+  main .cant p {
+    font-size: 17px;
+  }
+  main .cant i {
+    font-size: 30px;
+    font-weight: 100;
+  }
+  main .cant p:nth-child(5) {
+    color: rgba(0, 0, 0, 0.555);
+  }
+  main h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-top: 30px;
+    color: rgba(18, 18, 18, 0.8392156863);
+  }
+  main .card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    gap: 40px;
+  }
+  main .card .card-management {
+    width: 25%;
+    height: 100%;
+  }
+  main .card .card-body-1 {
+    width: 75%;
+    height: 50%;
+    display: flex;
+  }
+  main .card .card-body-1 {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .card--body-child-1 {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: -190px;
+    gap: 40px;
+    margin-bottom: 40px;
+    /* border: 1px solid; */
+  }
+  main .card--body-child-1 .card-child {
+    width: 200px;
+    flex-wrap: wrap;
+    height: 350px;
+    margin: 0 auto;
+  }
+  main .card-child .child-btn:focus {
+    background: #5db647;
+    color: white;
+  }
+  main .card-child .child-btn::after {
+    background: #5db647;
+  }
+  main .card-child .child-btn {
+    outline: none !important;
+    border: 3px solid;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 290px;
+  }
+  main .card-child .tavar {
+    width: 100%;
+    height: 42%;
+  }
+  main .card-child {
+    background: #fff;
+    position: relative;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+  }
+  main .card-child i {
+    position: absolute;
+    color: #121212;
+    top: 10px;
+    left: 85%;
+    font-size: 45px;
+    cursor: pointer;
+    margin-left: -15px;
+  }
+  main .card-child h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: #414141;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 95%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .card-child p {
+    width: 95%;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  main .card-child h2 {
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 800;
+  }
+  main .card-child p:nth-child(6) {
+    width: 70%;
+    background: red;
+    color: red;
+  }
+  main .card-child .rating {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  main .card-child .child-btn {
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: white;
+    color: #5db647;
+    border: 1px solid #5db647;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 18px;
+  }
+  main .card-child .child-btn:focus {
+    outline: none !important;
+    border: 3px solid #5db647;
+  }
+  main .child-btn:hover {
+    background-color: #5db647;
+    color: white;
+  }
+  main .button-more {
+    margin-left: 38%;
+    width: 200px;
+    height: 50px;
+    background: #dedede;
+    color: #606060;
+    border-radius: 1px;
+    transition: 0.5s;
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+  }
+  main button:hover {
+    background: #969595;
+    color: #fff;
+  }
+  main .number {
+    width: 670px;
+    height: 50px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 33px;
+    color: #606060;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+  }
+  main .number a {
+    text-decoration: none;
+    color: #121212;
+  }
+  main p {
+    transition: 0.5s;
+  }
+  main i {
+    transition: 0.5s;
+  }
+  .number p:hover {
+    color: #f63;
+  }
+  .number i:hover {
+    color: #f63;
+  }
+  main .number p:nth-child(3) {
+    color: #f63;
+  }
+  .card-management .contiyner {
+    background: #f3f2f1;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .card-management h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    position: absolute;
+    top: -150px;
+  }
+}
+@media screen and (max-width: 390px) {
+  main {
+    width: 100%;
+    border: 1px solid #fbf8ec;
+    background: #fbf8ec;
+    margin: 0 auto;
+  }
+  main .contiyner {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .cant {
+    width: 350px;
+    cursor: pointer;
+    height: 24px;
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+    gap: 4px;
+  }
+  main .cant p {
+    font-size: 12px;
+  }
+  main .cant i {
+    font-size: 17px;
+    font-weight: 100;
+  }
+  main .cant p:nth-child(5) {
+    color: rgba(0, 0, 0, 0.555);
+  }
+  main h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-top: 30px;
+    color: rgba(18, 18, 18, 0.8392156863);
+  }
+  main .card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    gap: 40px;
+  }
+  main .card .card-management {
+    width: 25%;
+    height: 100%;
+  }
+  main .card .card-body-1 {
+    width: 75%;
+    height: 50%;
+    display: flex;
+  }
+  main .card .card-body-1 {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .card--body-child-1 {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: -115px;
+  }
+  main .card--body-child-1 .card-child {
+    width: 160px;
+    flex-wrap: wrap;
+    height: 250px;
+    margin: 0 auto;
+  }
+  main .card-child .child-btn:focus {
+    background: #5db647;
+    color: white;
+  }
+  main .card-child .child-btn::after {
+    background: #5db647;
+  }
+  main .card-child .child-btn {
+    outline: none !important;
+    border: 3px solid;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 200px;
+  }
+  main .card-child .tavar {
+    width: 100%;
+    height: 42%;
+  }
+  main .card-child {
+    background: #fff;
+    position: relative;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  main .card-child i {
+    position: absolute;
+    color: #121212;
+    top: 10px;
+    left: 85%;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: -15px;
+  }
+  main .card-child h4 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: #414141;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 95%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  main .card-child p {
+    width: 95%;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -15px;
+  }
+  main .card-child h2 {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 800;
+  }
+  main .card-child p:nth-child(6) {
+    width: 70%;
+    background: red;
+    color: red;
+  }
+  main .card-child .rating {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  main .card-child .child-btn {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: white;
+    color: #5db647;
+    border: 1px solid #5db647;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 18px;
+  }
+  main .card-child .child-btn:focus {
+    outline: none !important;
+    border: 3px solid #5db647;
+  }
+  main .child-btn:hover {
+    background-color: #5db647;
+    color: white;
+  }
+  main .button-more {
+    margin-left: 25%;
+    width: 200px;
+    height: 50px;
+    background: #dedede;
+    color: #606060;
+    border-radius: 1px;
+    transition: 0.5s;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  main button:hover {
+    background: #969595;
+    color: #fff;
+  }
+  main .number {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+    color: #606060;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  main .number a {
+    text-decoration: none;
+    color: #121212;
+  }
+  main .number a p {
+    transition: 0.5s;
+  }
+  main .number a p i {
+    transition: 0.5s;
+  }
+  main .number p:hover {
+    color: #f63;
+  }
+  main .number i:hover {
+    color: #f63;
+  }
+  main main .number p:nth-child(3) {
+    color: #f63;
+  }
+  main .card-management .contiyner {
+    background: #f3f2f1;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  main .card-management .contiyner h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    margin-left: 10px;
+    line-height: 120%;
+  }
+}
+footer {
+  background: #f9f4e2;
+  width: 1300px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.footer-center {
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-center img {
+  margin-left: 5px;
+}
+
+.footer-center .ul-1 {
+  display: flex;
+  width: 800px;
+  list-style: none;
+  gap: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.ul-1 li {
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.ul-1 li:hover {
+  color: #f63;
+}
+
+.footer-center .ul-2 {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.ul-2 li {
+  font-size: 15px;
+}
+
+.footer-center i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer-center h6 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 150px;
+}
+
+.footer-center h6:hover {
+  color: #f63;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    background: #f9f4e2;
+    width: 768px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .footer-center {
+    width: 95%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .footer-center .ul-1 {
+    display: flex;
+    width: 550px;
+    list-style: none;
+    gap: 15px;
+    cursor: pointer;
+  }
+  .ul-1 li {
+    font-size: 10px;
+    transition: 0.5s;
+  }
+  .ul-1 li:hover {
+    color: #f63;
+  }
+  .footer-center .ul-2 {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    width: 60px;
+    height: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    cursor: pointer;
+  }
+  .ul-2 li {
+    font-size: 10px;
+    width: 10px;
+  }
+  .footer-center i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .footer-center h6 {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+    cursor: pointer;
+    width: 100px;
+  }
+  .footer-center h6:hover {
+    color: #f63;
+  }
+}
+@media screen and (max-width: 390px) {
+  footer {
+    background: #f9f4e2;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer-center {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .footer-center .ul-1 {
+    display: flex;
+    width: 350px;
+    margin-top: -50px;
+    justify-content: space-around;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+  }
+  .ul-1 li {
+    font-size: 6px;
+    transition: 0.5s;
+  }
+  .ul-1 li:hover {
+    color: #f63;
+  }
+  .footer-center .ul-2 {
+    display: flex;
+    list-style: none;
+    width: 120px;
+    height: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    justify-content: space-around;
+    top: 95px;
+    left: 180px;
+  }
+  .ul-2 li {
+    font-size: 5px;
+    width: 5px;
+  }
+  .footer-center i {
+    font-size: 25px;
+    margin-top: 80px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .footer-center i:hover {
+    color: #f63;
+  }
+  .footer-center h6 {
+    font-weight: 300;
+    font-style: normal;
+    position: absolute;
+    font-size: 15px;
+    cursor: pointer;
+    width: 150px;
+    bottom: 82px;
+    left: 40px;
+    transition: 0.5s;
+  }
+  .footer-center h6:hover {
+    color: #f63;
+  }
+}
+.menu-bar {
+  display: none;
+}
+
+.contiyner {
+  width: 100%;
+  height: 50%;
+}
+
+.price--class {
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price--class button {
+  margin-top: 3px;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.price--class p {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #121212;
+}
+
+.calculiyator {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculiyator input {
+  width: 134px;
+  margin: 0 auto;
+  padding-left: 8px;
+  height: 80%;
+}
+
+.calculiyator i {
+  font-size: 25px;
+}
+
+.min-max-class {
+  width: 70%;
+  color: #5db647;
+  background: #5db647;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contiyner {
+    width: 100%;
+    height: 50%;
+  }
+  .price--class {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .price--class button {
+    margin-top: 3px;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  .price--class p {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: #121212;
+  }
+  .calculiyator {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .calculiyator input {
+    width: 134px;
+    margin: 0 auto;
+    padding-left: 8px;
+    height: 80%;
+  }
+  .calculiyator i {
+    font-size: 25px;
+  }
+  .min-max-class {
+    width: 70%;
+    color: #5db647;
+    background: #5db647;
+    margin-left: 35px;
+    margin-top: 15px;
+  }
+  .card-management h5 {
+    background: #5db647;
+    width: 130px;
+    border-radius: 7px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .card-management h5:hover {
+    background: white;
+    border: 1px solid #5db647;
+    color: #5db647;
+  }
+  .card-management h5:focus {
+    background: white;
+    outline: none !important;
+  }
+  .price--class {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }
+  .price--class button {
+    margin-top: 3px;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    display: none;
+  }
+  .price--class p {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: #121212;
+    display: none;
+  }
+  .calculiyator {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .calculiyator input {
+    width: 134px;
+    margin: 0 auto;
+    padding-left: 8px;
+    height: 80%;
+    display: none;
+  }
+  .calculiyator i {
+    font-size: 25px;
+    display: none;
+  }
+  .min-max-class {
+    width: 70%;
+    color: #5db647;
+    background: #5db647;
+    margin-left: 35px;
+    margin-top: 15px;
+    display: none;
+  }
+}
+@media screen and (max-width: 390px) {
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+  }
+  .menu-bar a {
+    text-decoration: none;
+  }
+  .menu-bar a .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #121212;
+    transition: 0.5s;
+    outline: none;
+  }
+  .menu-bar a .bar i {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .menu-bar a .bar p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .menu-bar a .bar:hover {
+    color: #f63;
+  }
+  .menu-bar a .bar:focus {
+    color: #f63;
+  }
+}
+* {
   font-family: "Rubik", sans-serif;
   text-decoration: none;
   list-style: none;
