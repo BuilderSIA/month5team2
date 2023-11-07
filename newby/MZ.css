@@ -32,11 +32,11 @@ ol {
   padding: 0;
   list-style: none;
 }
-
+/* 
 img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 a {
   text-decoration: none;
@@ -522,7 +522,7 @@ nav select {
 
 footer {
   height: 180px;
-  background-image: url(..//..//section.img/bg.png);
+  /* background-image: url(..//..//section.img/bg.png); */
   background-color: var(--bodyBG);
   padding: 40px 0;
 }
@@ -551,7 +551,7 @@ footer {
 }
 
 .hero {
-  background-image: url(../../cart.img/background_img.png);
+  /* background-image: url(../../cart.img/background_img.png); */
   padding-top: 100px;
 }
 
