@@ -288,14 +288,14 @@ nav select {
   align-items: center;
   justify-content: center;
   line-height: 50px;
-  color: #e02b0b;
+  /* color: #e02b0b; */
   cursor: pointer;
-  text-shadow: 0 0 6px #e5d331;
+  /* text-shadow: 0 0 6px #e5d331; */
   transition: 0.2s;
 }
 
 .menu .menu_box .menu_card .small_card i:hover {
-  color: #ff1e1e;
+  /* color: #ff1e1e; */
 }
 
 .menu .menu_box .menu_card .menu_info h2 {

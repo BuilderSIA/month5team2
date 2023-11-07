@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: #414141;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -12,6 +16,7 @@ nav {
   position: fixed;
   z-index: 5;
   margin: 0 auto;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 nav .navbar {
   display: flex;
@@ -21,7 +26,6 @@ nav .navbar {
   margin: 0 auto;
   width: 1300px;
   gap: 35px;
-  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 nav .navbar-img-group {
   width: 37px;
@@ -446,12 +450,11 @@ main .card .card-body-1 {
   width: 75%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 main .card--body-child-1 {
   width: 100%;
-  height: 50%;
+  height: 200%;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -460,7 +463,6 @@ main .card--body-child-1 {
 }
 main .card--body-child-1 .card-child {
   width: 250px;
-  flex-wrap: wrap;
   height: 365px;
 }
 main .card-child .child-btn:focus {
@@ -544,7 +546,7 @@ main .card-child .child-btn {
   font-size: 18px;
   top: 18px;
 }
-main .card-child .ildch-btn:focus {
+main .card-child .child-btn:focus {
   outline: none !important;
   border: 3px solid #5db647;
 }
@@ -568,7 +570,6 @@ main button:hover {
 }
 main .number {
   width: 670px;
-  height: 50px;
   margin-top: 60px;
   display: flex;
   align-items: center;
@@ -577,8 +578,7 @@ main .number {
   gap: 33px;
   color: #606060;
   cursor: pointer;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
 }
 main .number a {
   text-decoration: none;
