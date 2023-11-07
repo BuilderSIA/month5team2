@@ -5,10 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: #414141;
-}
-
 nav {
   width: 100%;
   height: 100px;
@@ -397,7 +393,6 @@ main {
 }
 main .contiyner {
   width: 98%;
-  margin: 0 auto;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -409,7 +404,6 @@ main .cant {
   display: flex;
   margin-top: 35px;
   align-items: center;
-  gap: 4px;
 }
 main .cant p {
   font-size: 17px;
@@ -432,119 +426,60 @@ main h3 {
 }
 main .card {
   width: 100%;
-  height: 80%;
   display: flex;
   margin-top: 50px;
-  gap: 40px;
-}
-main .card .card-management {
-  width: 25%;
-  height: 100%;
-}
-main .card .card-body-1 {
-  width: 75%;
-  height: 50%;
-  display: flex;
-}
-main .card .card-body-1 {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  gap: 60px;
 }
 main .card--body-child-1 {
   width: 100%;
-  height: 200%;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 40px;
-  /* border: 1px solid; */
 }
 main .card--body-child-1 .card-child {
   width: 250px;
-  height: 365px;
-}
-main .card-child .child-btn:focus {
-  background: #5db647;
-  color: white;
-}
-main .card-child .child-btn::after {
-  background: #5db647;
-}
-main .card-child .child-btn {
-  outline: none !important;
-  border: 3px solid;
-  color: white;
-  position: relative;
-  left: 7px;
-  top: -7px;
-}
-main .card-child .tavar {
-  width: 100%;
-  height: 42%;
-}
-main .card-child {
+  height: 400px;
   background: #fff;
   position: relative;
   box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  padding: 10px;
 }
-main .card-child i {
+main .card-child .tavar {
+  width: 90%;
+  height: 45%;
+}
+main .card-child .fa-heart {
   position: absolute;
   color: #121212;
   top: 10px;
   left: 85%;
   font-size: 45px;
   cursor: pointer;
-  margin-left: -15px;
 }
 main .card-child h4 {
-  font-size: 18px;
-  font-style: normal;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 150%;
   color: #414141;
   margin-top: 15px;
-  margin-left: 10px;
-  width: 95%;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-}
-main .card-child p {
-  width: 95%;
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 100%;
 }
 main .card-child h2 {
-  font-size: 22px;
-  margin-left: 10px;
-  font-weight: 800;
-}
-main .card-child p:nth-child(6) {
-  width: 70%;
-  background: red;
-  color: red;
-}
-main .card-child .rating {
-  margin-left: 10px;
-  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
 }
 main .card-child .child-btn {
   width: 95%;
   height: 50px;
-  margin: 0 auto;
-  margin-top: 5px;
-  background: white;
-  color: #5db647;
+  outline: none !important;
   border: 1px solid #5db647;
   border-radius: 5px;
+  color: #5db647;
+  background: white;
+  position: absolute;
+  left: 7px;
+  bottom: 20px;
   transition: 0.5s;
   font-size: 18px;
-  top: 18px;
 }
 main .card-child .child-btn:focus {
   outline: none !important;
@@ -569,16 +504,12 @@ main button:hover {
   color: #fff;
 }
 main .number {
-  width: 670px;
-  margin-top: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 25px;
   gap: 33px;
   color: #606060;
   cursor: pointer;
-  margin: 10px auto 0 auto;
 }
 main .number a {
   text-decoration: none;
@@ -604,21 +535,6 @@ main .number p:nth-child(3) {
 }
 main .number p:nth-child(3) main .number p:nth-child(3) {
   color: #f63;
-}
-main .number p:nth-child(3) .card-management .contiyner {
-  background: #f3f2f1;
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-main .number p:nth-child(3) .card-management .contiyner h5 {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  margin-left: 10px;
-  line-height: 120%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1089,17 +1005,14 @@ main .number p:nth-child(3) .card-management .contiyner h5 {
     line-height: 120%;
   }
 }
-footer {
+.fav__footer {
   background: #f9f4e2;
   width: 1300px;
-  height: 150px;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .footer-center {
-  width: 90%;
-  height: 70%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
 }
