@@ -4,6 +4,9 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+a {
+  color: #414141;
+}
 nav {
   width: 100%;
   height: 100px;
@@ -415,8 +418,8 @@ main {
     // height: 1100px;
     // margin: 0 auto;
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
   }
   .cant {
     width: 350px;
@@ -482,11 +485,12 @@ main {
     // margin-bottom: 40px;
   }
   .card--body-child-1 .card-child {
-    width: 250px;
-    // flex-wrap: wrap;
-    height: 400px;
-    background: #fff;
     position: relative;
+    width: 250px;
+    box-sizing: border-box;
+    // flex-wrap: wrap;
+    // height: 400px;
+    background: #fff;
     box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
@@ -500,7 +504,7 @@ main {
     color: #121212;
     top: 10px;
     left: 85%;
-    font-size: 45px;
+    font-size: 26px;
     cursor: pointer;
   }
   .card-child h4 {
@@ -535,8 +539,10 @@ main {
     background-color: #5db647;
     color: white;
   }
+  .box {
+    margin: 50px 0;
+  }
   .button-more {
-    margin-left: 42%;
     width: 200px;
     height: 50px;
     background: #dedede;
@@ -546,6 +552,7 @@ main {
     // position: relative;
     // top: -70px;
     font-size: 20px;
+    margin: 0 0 20px 42%;
   }
   button:hover {
     background: #969595;
@@ -1116,11 +1123,11 @@ main .number p:nth-child(3) {
 
 .fav__footer {
   background: #f9f4e2;
-  width: 1300px;
-  margin: 0 auto;
   padding: 30px;
 }
 .footer-center {
+  width: 1300px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }

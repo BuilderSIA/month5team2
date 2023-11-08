@@ -1,180 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div class="navbar" id="favourites-navbar">
-        <img class="navbar-img-group" src="/images/fav/Group.png" alt="Group" />
-        <h2 class="navbar-img-h2" id="favourites-navbar-img-h2">СЕВЕРЯНОЧКА</h2>
-        <button id="favourites-navbar-buttom">
-          <i class="bx bx-menu"></i>
-          <p>Каталог</p>
-        </button>
-        <input id="inp" type="search" placeholder="Найти товар" />
-        <div class="contiyner">
-          <div class="con" id="favourites-navbar-icon-heart">
-            <a href="/pages/favourites.html">
-              <i class="bx bx-heart"></i>
-            </a>
-              <p>Избранное</p>
-          </div>
-          <div class="con" id="favourites-navbar-icon-package">
-            <a href="/pages/single.html">
-              <i class="bx bx-package"></i>
-            </a>
-            <p>Заказы</p>
-          </div>
-          <div class="con" id="favourites-navbar-icon-shopping-bag">
-            <a href="/pages/shoppingCart.html">
-              <i class="bx bx-shopping-bag"></i>
-            </a>
-            <p>Корзина</p>
-          </div>
-        </div>
-        <div class="profile" id="favourites-navbar-icon-profile">
-          <img src="/images/fav/avatar.png" alt="Avatar" />
-          <p>Алексей</p>
-        </div>
-        <select name="pets" id="pet-select">
-          <i class="bx bx-chevron-down"></i>
-          <option value=""><i class="bx bx-chevron-down"></i></option>
-          <option value="spider">Spider</option>
-          <option value="spider">Spider</option>
-          <option value="spider">Spider</option>
-          <option value="spider">Spider</option>
-        </select>
-      </div>
-    </nav>
 
-    <main>
-      <div class="contiyner" id="favourites-main-contiyner">
-        <div class="cant">
-          <p id="favourites-main-head-home">Главная</p>
-          <i class="bx bx-chevron-right"></i>
-          <p id="favourites-main-head-catalogue">Каталог</p>
-          <i class="bx bx-chevron-right"></i>
-          <p id="favourites-main-head-new-part">Молоко, сыр, яйцо</p>
-        </div>
-        <div class="webname" id="favourites-main-webname">
-          <h3>Молоко, сыр, яйцо</h3>
-        </div>
-        <div class="card">
-          <div class="card-management" id="favourites-card-management">
-            <h5 id="favourites-card-management-price-class-filter">Фильтр</h5>
-            <div class="price--class">
-              <p id="favourites-card-management-price-class-price">Цена</p>
-              <button id="favourites-main-button-dalete">Очистить</button>
-            </div>
-            <div class="calculiyator">
-              <input  type="text" placeholder="1"   id="favourites-card-management-input-min">
-              <i class="bx bx-move-horizontal"></i>
-              <input type="text" placeholder="10"    id="favourites-card-management-input-max">
-            </div>
-            <input
-              class="min-max-class"
-              id="favourites-card-management-input-min-max"
-              type="range"
-              id="price"
-              name="points"
-              min="1"
-              max="10"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Favourites</title>
+</head>
 
-          <div class="card-body-1">
-            <div class="card--body-child-1"></div>
-          </div>
-        </div>
-      </div>
-      <button class="button-more">Показать ещё</button>
-      <div class="number">
-        <i class="bx bxs-chevrons-left"></i>
-        <i class="bx bxs-chevron-left"></i>
-        <a href="#" id="number-a-one"><p>1</p></a>
-        <a href="#" id="number-a-two"><p>2</p></a>
-        <a href="#" id="number-a-third"><p>3</p></a>
-        <a href="#" id="number-a-who"><p>4</p></a>
-        <a href="#" id="number-a-wife"><p>5</p></a>
-        <a href="#" id="number-a-six"><p>6</p></a>
-        <a href="#" id="number-a-seven"><p>7</p></a>
-        <a href="#" id="number-a-eight"><p>8</p></a>
-        <a href="#" id="number-a-nine"><p>9</p></a>
-        <i class="bx bxs-chevron-right"></i>
-        <i class="bx bxs-chevrons-right"></i>
-      </div>
-    </main>
-
-    <footer class="fav__footer">
-      <div class="footer-center">
-        <img src="/images/home/logo.png" alt="" />
-        <ul class="ul-1">
-          <li id="favourites-footer-ul1-li-1">О компании</li>
-          <li id="favourites-footer-ul1-li-2">Контакты</li>
-          <li id="favourites-footer-ul1-li-3">Вакансии</li>
-          <li id="favourites-footer-ul1-li-4">Статьи</li>
-          <li id="favourites-footer-ul1-li-5">
-            Политика обработки персональных данных
-          </li>
-        </ul>
-        <ul class="ul-2">
-          <li id="favourites-footer-ul2-li-instagram">
-            <img src="/images/fav/Group 469.png" alt="" />
-          </li>
-          <li id="favourites-footer-ul2-li-wk">
-            <img src="/images/fav/vkontakte.png" alt="" />
-          </li>
-          <li id="favourites-footer-ul2-li-facebook">
-            <img src="/images/fav/facebook.png" alt="" />
-          </li>
-          <li id="favourites-footer-ul2-li-ok">
-            <img src="/images/fav/ok.png" alt="" />
-          </li>
-        </ul>
-        <i class="bx bx-phone" id="favourites-footer-phone-icon"></i>
-        <h6 id="favourites-footer-phone-number">998 91 460 55 69</h6>
-      </div>
-    </footer>
-    <div class="menu-bar" id="favourites-menu-bar">
-      <a href="#">
-        <div class="bar" id="favourites-menu-bar-menu">
-          <i class="bx bx-menu"></i>
-          <p>Каталог</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="bar" id="favourites-menu-heart">
-          <i class="bx bx-heart"></i>
+<body>
+  <nav>
+    <div class="navbar" id="favourites-navbar">
+      <img class="navbar-img-group" src="/images/fav/Group.png" alt="Group" />
+      <h2 class="navbar-img-h2" id="favourites-navbar-img-h2">СЕВЕРЯНОЧКА</h2>
+      <button id="favourites-navbar-buttom">
+        <i class="bx bx-menu"></i>
+        <p>Каталог</p>
+      </button>
+      <input id="inp" type="search" placeholder="Найти товар" />
+      <div class="contiyner">
+        <div class="con" id="favourites-navbar-icon-heart">
+          <a href="/pages/favourites.html">
+            <i class="bx bx-heart"></i>
+          </a>
           <p>Избранное</p>
         </div>
-      </a>
-      <a href="#">
-        <div class="bar" id="favourites-menu-package">
-          <i class="bx bx-package"></i>
+        <div class="con" id="favourites-navbar-icon-package">
+          <a href="/pages/single.html">
+            <i class="bx bx-package"></i>
+          </a>
           <p>Заказы</p>
         </div>
-      </a>
-      <a href="#">
-        <div class="bar" id="favourites-menu-shopping-bag">
-          <i class="bx bx-shopping-bag"></i>
+        <div class="con" id="favourites-navbar-icon-shopping-bag">
+          <a href="/pages/shoppingCart.html">
+            <i class="bx bx-shopping-bag"></i>
+          </a>
           <p>Корзина</p>
         </div>
-      </a>
-      <a href="#">
-        <div class="bar" id="favourites-menu-bar-profile">
-          <img src="/images/fav/avatar.png" alt="" />
-        </div>
-      </a>
+      </div>
+      <div class="profile" id="favourites-navbar-icon-profile">
+        <img src="/images/fav/avatar.png" alt="Avatar" />
+        <p>Алексей</p>
+      </div>
+      <select name="pets" id="pet-select">
+        <i class="bx bx-chevron-down"></i>
+        <option value=""><i class="bx bx-chevron-down"></i></option>
+        <option value="spider">Spider</option>
+        <option value="spider">Spider</option>
+        <option value="spider">Spider</option>
+        <option value="spider">Spider</option>
+      </select>
     </div>
-    <script src="/js/muslim.data.js/data.js"></script>
-    <script src="/js/favourites.js"></script>
-  </body>
+  </nav>
+
+  <main>
+    <div class="contiyner" id="favourites-main-contiyner">
+      <div class="cant">
+        <p id="favourites-main-head-home">Главная</p>
+        <i class="bx bx-chevron-right"></i>
+        <p id="favourites-main-head-catalogue">Каталог</p>
+        <i class="bx bx-chevron-right"></i>
+        <p id="favourites-main-head-new-part">Молоко, сыр, яйцо</p>
+      </div>
+      <div class="webname" id="favourites-main-webname">
+        <h3>Молоко, сыр, яйцо</h3>
+      </div>
+      <div class="card">
+        <div class="card-management" id="favourites-card-management">
+          <h5 id="favourites-card-management-price-class-filter">Фильтр</h5>
+          <div class="price--class">
+            <p id="favourites-card-management-price-class-price">Цена</p>
+            <button id="favourites-main-button-dalete">Очистить</button>
+          </div>
+          <div class="calculiyator">
+            <input type="text" placeholder="1" id="favourites-card-management-input-min">
+            <i class="bx bx-move-horizontal"></i>
+            <input type="text" placeholder="10" id="favourites-card-management-input-max">
+          </div>
+          <input class="min-max-class" id="favourites-card-management-input-min-max" type="range" id="price"
+            name="points" min="1" max="10" />
+        </div>
+
+        <div class="card-body-1">
+          <div class="card--body-child-1"></div>
+        </div>
+      </div>
+      <div class="box">
+        <button class="button-more">Показать ещё</button>
+        <div class="number">
+          <i class="bx bxs-chevrons-left"></i>
+          <i class="bx bxs-chevron-left"></i>
+          <a href="#" id="number-a-one">
+            <p>1</p>
+          </a>
+          <a href="#" id="number-a-two">
+            <p>2</p>
+          </a>
+          <a href="#" id="number-a-third">
+            <p>3</p>
+          </a>
+          <a href="#" id="number-a-who">
+            <p>4</p>
+          </a>
+          <a href="#" id="number-a-wife">
+            <p>5</p>
+          </a>
+          <a href="#" id="number-a-six">
+            <p>6</p>
+          </a>
+          <a href="#" id="number-a-seven">
+            <p>7</p>
+          </a>
+          <a href="#" id="number-a-eight">
+            <p>8</p>
+          </a>
+          <a href="#" id="number-a-nine">
+            <p>9</p>
+          </a>
+          <i class="bx bxs-chevron-right"></i>
+          <i class="bx bxs-chevrons-right"></i>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer class="fav__footer">
+    <div class="footer-center">
+      <img src="/images/home/logo.png" alt="" />
+      <ul class="ul-1">
+        <li id="favourites-footer-ul1-li-1">О компании</li>
+        <li id="favourites-footer-ul1-li-2">Контакты</li>
+        <li id="favourites-footer-ul1-li-3">Вакансии</li>
+        <li id="favourites-footer-ul1-li-4">Статьи</li>
+        <li id="favourites-footer-ul1-li-5">
+          Политика обработки персональных данных
+        </li>
+      </ul>
+      <ul class="ul-2">
+        <li id="favourites-footer-ul2-li-instagram">
+          <img src="/images/fav/Group 469.png" alt="" />
+        </li>
+        <li id="favourites-footer-ul2-li-wk">
+          <img src="/images/fav/vkontakte.png" alt="" />
+        </li>
+        <li id="favourites-footer-ul2-li-facebook">
+          <img src="/images/fav/facebook.png" alt="" />
+        </li>
+        <li id="favourites-footer-ul2-li-ok">
+          <img src="/images/fav/ok.png" alt="" />
+        </li>
+      </ul>
+      <i class="bx bx-phone" id="favourites-footer-phone-icon"></i>
+      <h6 id="favourites-footer-phone-number">998 91 460 55 69</h6>
+    </div>
+  </footer>
+  <div class="menu-bar" id="favourites-menu-bar">
+    <a href="#">
+      <div class="bar" id="favourites-menu-bar-menu">
+        <i class="bx bx-menu"></i>
+        <p>Каталог</p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="bar" id="favourites-menu-heart">
+        <i class="bx bx-heart"></i>
+        <p>Избранное</p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="bar" id="favourites-menu-package">
+        <i class="bx bx-package"></i>
+        <p>Заказы</p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="bar" id="favourites-menu-shopping-bag">
+        <i class="bx bx-shopping-bag"></i>
+        <p>Корзина</p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="bar" id="favourites-menu-bar-profile">
+        <img src="/images/fav/avatar.png" alt="" />
+      </div>
+    </a>
+  </div>
+  <script src="/js/muslim.data.js/data.js"></script>
+  <script src="/js/favourites.js"></script>
+</body>
+
 </html>
