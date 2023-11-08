@@ -7,13 +7,14 @@ const heart = document.querySelectorAll('#heart');
 
 const redhrt = "fa-solid fa-heart";
 const whitehrt = "fa-regular fa-heart";
-
+let p = 0;
 
 fetch(url)
 .then((res) => res.json())
 .then((data) => {
     // console.log(data);
     let favs = getFav('liked');
+    
     
 
     for(let i= 0;i<data.length;i++){
@@ -25,7 +26,7 @@ fetch(url)
             }
         }
        })
-        
+      
         
         prodImg[i].setAttribute('src',data[i].image);
 
@@ -33,13 +34,22 @@ fetch(url)
         // console.log(toCart[i]);
 
         heart[i].addEventListener('click',(h)=>{
-            // console.log(data[i]);
+            
             let heartType = h.target.getAttributeNode('class').value;
+
             if(heartType == "fa-regular fa-heart"){
                 setFav(data[i])
-            }else{
-                
             }
+            // else{
+            //     favs.map((el)=>{
+            //         if(el.liked.id == data[i].id){
+            //             p = favs.indexOf(el);
+            //             unsetFav(data[i])
+                        
+            //             // console.log(p);
+            //         }
+            //     })
+            // }
             location.reload(true)
         })
         
@@ -69,6 +79,30 @@ function setFav(liked){
     }
     localStorage.setItem('liked',JSON.stringify(items))
 }
+// function unsetFav(liked){
+//     let arrFav = 0;
+//     let item = {liked}
+//     let items = getFav('liked');
+//     localStorage.removeItem('liked');
+//     items.map((e)=>{
+//         if(e.liked.id == item.liked.id){
+//             arrFav += 1;
+//         }
+//     })
+//     if(arrFav == 0){
+//         items.splice(p,1);
+//         console.log(items);
+//     }
+//     localStorage.setItem('liked',JSON.stringify(items))
+    
+// }
+
+
+
+
+
+
+
 
 
 
