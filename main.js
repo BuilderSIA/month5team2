@@ -13,15 +13,16 @@ fetch(url)
 .then((res) => res.json())
 .then((data) => {
     // console.log(data);
-    let favs = getFav('liked');
+    
     
     
 
     for(let i= 0;i<data.length;i++){
-        
+        let favs = getFav(); 
+          console.log(favs);
        favs.map((e)=>{
-        if(e.liked.id != undefined){
-            if(data[i].id == e.liked.id){
+        if(e.id != undefined){
+            if(data[i].id == e.id){
                 heart[i].setAttribute('class',"fa-solid fa-heart")
             }
         }
@@ -70,7 +71,7 @@ function setFav(liked){
     let item = {liked}
     let items = getFav();
     items.map((e)=>{
-        if(e.liked.id == item.liked.id){
+        if(e.id == item.liked.id){
             arrFav += 1;
         }
     })
