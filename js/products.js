@@ -3,10 +3,9 @@ const btn = document.getElementById('pro__btn')
 const input = document.getElementById('pro__search')
 const user = document.querySelector('.pro__header-nav-user')
 
-const toCart = document.querySelectorAll('#cartbtn')
-// for (let i = 0; i <= toCart.length; i++) {
-//     console.log(toCart[i])
-// }
+
+// const image = document.querySelectorAll('#progImg')
+// console.log(image);
 
 
 
@@ -22,15 +21,14 @@ fetch(url)
         return `
         <li class="pro__main-list-item">
         <img src="/images/like.svg" class="pro__main-list-item-like">
-        <img src="${item.image}" width="70%" height="180">
+        <img id="prodImg" src="${item.image}" width="70%" height="180">
         <h3 class="pro__main-list-item-price">${item.price}</h3>
         <h3 class="pro__main-list-item-title">${item.title}</h3>
-        <button id="cartbtn" class="pro__main-list-item-btn">В корзину</button>
+        <button id="cart-btn" class="pro__main-list-item-btn">В корзину</button>
         </li>
         `
     })
-    products = products.join(' ')
-    list.innerHTML = products
+    list.innerHTML = products.join("")
     
     
     btn.addEventListener('click', () => {
@@ -47,8 +45,10 @@ fetch(url)
                 `
             }
         })
-        products = products.join(' ')
+        products = products.join("")
         list.innerHTML = products
     })
 
+    const cartbtn = document.querySelectorAll('#cart-btn')
+    console.log(cartbtn);  
 })
