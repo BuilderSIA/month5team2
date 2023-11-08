@@ -14,7 +14,7 @@ function getFav(){
 
 function renderData(data) {
   data = getFav()
-  console.log(data);
+  // console.log(data);
   data.map((item) => {
     let elCard = document.createElement("div");
     elCard.setAttribute("class", "card-child");
@@ -48,3 +48,23 @@ inp.addEventListener('keyup', () => {
     renderData(allProducts);
   }
 });
+
+
+
+
+
+
+
+
+
+function getProd(){
+  return localStorage.getItem('product') ? JSON.parse(localStorage.getItem('product')) : [];
+}
+
+function setProd(key){
+  let item = {key}
+  let items = getProd('product');
+  
+  items.push(item);
+  localStorage.setItem('product',JSON.stringify(items))
+}

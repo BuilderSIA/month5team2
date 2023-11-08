@@ -12,7 +12,7 @@ let p = 0;
 fetch(url)
 .then((res) => res.json())
 .then((data) => {
-    console.log(data);
+    // console.log(data);
     let favs = getFav('liked');
     
     
