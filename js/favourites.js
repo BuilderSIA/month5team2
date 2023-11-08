@@ -1,16 +1,28 @@
 let inp = document.getElementById("inp");
 let elParent = document.querySelector(".card--body-child-1");
 
-function renderData(allData) {
-  allData.map((item) => {
+function getFav(){
+  return localStorage.getItem('liked') ? JSON.parse(localStorage.getItem('liked')) : [];
+}
+
+
+
+
+
+
+
+
+function renderData(data) {
+  data = getFav()
+  console.log(data);
+  data.map((item) => {
     let elCard = document.createElement("div");
     elCard.setAttribute("class", "card-child");
     elCard.innerHTML = `
             <i class="bx bx-heart"></i>
-            <img class="tavar" src="${item.productImg}" alt="" />
-            <h2>${item.productName}</h2>
-            <h4>${item.productPrice} ₽</h4>
-            <p>${item.productDesc}</p>
+            <img class="tavar" src="${item.liked.image}" alt="" />
+            <p>${item.liked.title}</p>
+            <h4>${item.liked.price} ₽</h4>
            
             <button class="child-btn">В корзину</button>
         `;

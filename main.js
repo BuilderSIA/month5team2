@@ -12,7 +12,7 @@ let p = 0;
 fetch(url)
 .then((res) => res.json())
 .then((data) => {
-    // console.log(data);
+    console.log(data);
     let favs = getFav('liked');
     
     
@@ -68,7 +68,7 @@ function getFav(){
 function setFav(liked){
     let arrFav = 0;
     let item = {liked}
-    let items = getFav('liked');
+    let items = getFav();
     items.map((e)=>{
         if(e.liked.id == item.liked.id){
             arrFav += 1;
