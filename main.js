@@ -13,50 +13,40 @@ fetch(url)
 .then((res) => res.json())
 .then((data) => {
     // console.log(data);
-    
-    
-    
-
-    for(let i= 0;i<data.length;i++){
-        let favs = getFav(); 
-          console.log(favs);
-       favs.map((e)=>{
-        if(e.id != undefined){
-            if(data[i].id == e.id){
-                heart[i].setAttribute('class',"fa-solid fa-heart")
-            }
-        }
-       })
-      
-        
-        prodImg[i].setAttribute('src',data[i].image);
-
-        titleP[i].innerHTML = data[i].title;
-        // console.log(toCart[i]);
-
-        heart[i].addEventListener('click',(h)=>{
+    let x = 0;
+    let heartType = heart[x].getAttribute('class');
+    data.map((item)=>{
+        let favs = getFav();
+        favs.map((local)=>{
+            if(local.liked.id == item.id){
+                heart[x].setAttribute('class','fa-solid fa-heart')
+            }  
+        })
+        // console.log(item);
+        prodImg[x].setAttribute('src',String(item.image));
+        titleP[x].textContent = item.title;
+        heart[x].addEventListener('click',(icon)=>{
             
-            let heartType = h.target.getAttributeNode('class').value;
-
-            if(heartType == "fa-regular fa-heart"){
-                setFav(data[i])
-            }
-            // else{
-            //     favs.map((el)=>{
-            //         if(el.liked.id == data[i].id){
-            //             p = favs.indexOf(el);
-            //             unsetFav(data[i])
-                        
-            //             // console.log(p);
-            //         }
-            //     })
+            setFav(item);
+            
+            
+            
+            
+            
+            // favs[x].map((local)=>{
+            //     console.log(local);
+            // })
+            // if(){
+            //     icon.srcElement.className = 'fa-solid fa-heart'
             // }
             location.reload(true)
         })
         
-
-    }
-    
+        
+        
+        x += 1;
+        
+    })
     
     
 })
@@ -69,9 +59,10 @@ function getFav(){
 function setFav(liked){
     let arrFav = 0;
     let item = {liked}
-    let items = getFav();
+    let items = getFav('liked');
+    // console.log(items);
     items.map((e)=>{
-        if(e.id == item.liked.id){
+        if(e.liked.id == item.liked.id){
             arrFav += 1;
         }
     })
