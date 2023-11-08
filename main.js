@@ -12,3 +12,21 @@ fetch(url)
         prodImg[i].setAttribute('src', data[i].image);
     }
 })
+
+
+
+
+
+// =============================================================================================
+const profile = document.querySelector('.profile')
+const xmark = document.querySelector('.fa-xmark')
+const modal_cont = document.querySelector('.container__modal')
+
+
+profile.addEventListener('click', () => {
+    // console.log(profile);
+    modal_cont.style.display = 'block'
+})
+xmark.addEventListener('click', () => {
+    modal_cont.style.display = 'none'
+})
