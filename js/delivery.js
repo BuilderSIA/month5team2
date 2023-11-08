@@ -88,5 +88,4 @@ async function sumPrice(uri) {
 async function getCallbacks() {
   await sumPrice(url)
 }
-
 getCallbacks()
