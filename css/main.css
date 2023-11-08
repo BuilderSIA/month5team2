@@ -98,7 +98,6 @@ nav .navbar {
 }
 
 nav .navbar-img-group {
-  width: 37px;
   margin-left: 20px;
 }
 
@@ -287,7 +286,7 @@ nav select {
   align-items: center;
   justify-content: center;
   line-height: 50px;
-  color: #e02b0b;
+  color: #00BAFC;
   cursor: pointer;
   text-shadow: 0 0 6px #e5d331;
   transition: 0.2s;
