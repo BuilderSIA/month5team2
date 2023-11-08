@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="npm i bootstrap@5.3.2">
+        <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+        <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+
 </head>
 
 <body>
@@ -28,19 +37,21 @@
                 <div class="contiyner">
                     <a href="./pages/favourites.html" target="_blank">
                         <div class="con">
-                            <i  class="fa-solid fa-heart"></i>
+                            
+                            <i class="bx bx-heart"></i>
                             <p onclick="goToPage('favourites')">Избранное</p>
                         </div>
                     </a>
                     <a href="./pages/products.html" target="_blank">
                         <div class="con">
-                            <i class="fa-solid fa-shop"></i>
+                            <i class="bx bx-package"></i>
                             <p onclick="goToPage('Products')">продукты</p>
                         </div>
                     </a>
                     <a href="./pages/shoppingCart.html" target="_blank">
                         <div class="con">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cor_1">1</div>
+                            <i class="bx bx-shopping-bag"></i>
                             <p onclick="goToPage('shoppingCart')">Корзина</p>
                         </div>
                     </a>
@@ -62,20 +73,29 @@
     </header>
 
 
-    <section class="hero" id="hero">
-        <ul class="main_content container">
-            <li class="img_content">
-                <img class="header_imges" src="" alt="gul">
-                <h1 class="title_main">Доставка бесплатно от 1000 ₽</h1>
-                </img>
-            </li>
-        </ul>
+    <section class="hero" >
+        
+          <section class="container-1">
+          <div class="slider_wrapp">
+            <div class="slider">
+                <img id="1" src="./images/home/carusel1.png"  alt="">
+                <img id="2" src="./images/home/carusel2.png"  alt="">
+                <img id="3" src="./images/home/carusel3.png"  alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+          </div>
+        </section>
+         
     </section>
 
 
     <main class="main_container">
 
-        menu
+        <!-- menu -->
 
         <div class="menu" id="Menu">
             <div class="menu_text_content">

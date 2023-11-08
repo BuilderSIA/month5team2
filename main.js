@@ -117,3 +117,39 @@ function setProd(key){
     items.push(item);
     localStorage.setItem('product',JSON.stringify(items))
 }
+// const carousel = new bootstrap.Carousel('#myCarousel')
+
+// const myCarouselElement = document.querySelector('#myCarousel')
+
+// const carousel1 = new bootstrap.Carousel(myCarouselElement, {
+//   interval: 2000,
+//   touch: false
+// })
+// const myCarousel = document.getElementById('myCarousel')
+
+// myCarousel.addEventListener('slide.bs.carousel', event => {
+//   // do something...
+// })
+$(document).ready(function(){
+    var currentPosition = 0;
+    var slideWidth = $('.slide').width();
+    var totalSlides = $('.slide').length;
+    var interval = 3000; // 3 sekund
+  
+    function moveSlide() {
+      if (currentPosition > -slideWidth * (totalSlides - 1)) {
+        currentPosition -= slideWidth;
+      } else {
+        currentPosition = 0;
+      }
+      $('.carousel').css('transform', 'translateX(' + currentPosition + 'px)');
+    }
+  
+    setInterval(moveSlide, interval);
+  });
+  $(document).ready(function(){
+    $('#carouselExampleSlidesOnly').carousel({
+      interval: 3000 // 3 sekund
+    });
+  });
+  
