@@ -70,9 +70,9 @@ async function sumPrice(uri) {
       const array = html.splice(0, 5)
       let number = ""
 
-      object.forEach(item => {
-        number += toString(item.price)
-      })
+    //   object.forEach(item => {
+    //     number += toString(item.price)
+    //   })
 
       price.innerHTML = number
 
