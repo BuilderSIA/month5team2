@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team-B</title>
     <link rel="stylesheet" href="/newby/MZ.css">
-    <link rel="stylesheet" href="/newby/like.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.5.0/tailwind.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -96,24 +93,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                             <span class="skidka">-50%</span>
                         </div>
 
@@ -141,24 +121,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                             <span class="skidka">-50%</span>
                         </div>
 
@@ -186,24 +149,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                             <span class="skidka">-50%</span>
                         </div>
 
@@ -232,24 +178,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                             <span class="skidka">-50%</span>
                         </div>
 
@@ -290,24 +219,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -334,24 +246,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -378,24 +273,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -421,24 +299,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -478,24 +339,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -522,24 +366,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -566,24 +393,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -610,24 +420,7 @@
                     </div>
                     <div class="menu_content-box">
                         <div class="small_card">
-                        <button x-data="{
-                            state: 'Unliked',
-                            usedKeyboard: false,
-                            async updateState(to) {
-                                this.state = 'Saving'
-                                await new Promise(resolve => setTimeout(resolve, 1000))
-                                this.state = to
-                            }
-                            }"
-                            :class="{
-                            'like unliked': state === 'Unliked',
-                            'like saving': state === 'Saving',
-                            'like liked': state === 'Liked',
-                            'focus:outline-none': !usedKeyboard
-                            }"
-                            @click="updateState(state === 'Unliked' ? 'Liked' : 'Unliked')" @keydown.window.tab="usedKeyboard = true">
-                            <span class="like-icon like-icon-state" aria-label="state" x-text="state" aria-live="polite">Unliked</span>
-                            </button>
+                        <i id="heart" class="fa-regular fa-heart"></i>
                         </div>
 
                         <div class="menu_info">
@@ -767,7 +560,6 @@
 
 
     <script src="./main.js"></script>
-    <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js'></script>
 </body>
 
 </html>
